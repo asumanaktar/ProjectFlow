@@ -54,6 +54,7 @@ app.MapPost("/projects", async (Project project, AppDbContext db) =>
 
   return Results.Created($"/projects/{project.Id}", project);
 });
+
 app.MapPut("/projects/{id}", async (int id, Project project, AppDbContext db) =>
 {
   var validationResults = new List<ValidationResult>();
