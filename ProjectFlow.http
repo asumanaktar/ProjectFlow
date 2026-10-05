@@ -1,0 +1,6 @@
+@ProjectFlow_HostAddress = http://localhost:5207
+
+GET {{ProjectFlow_HostAddress}}/projects
+Accept: application/json
+
+###
